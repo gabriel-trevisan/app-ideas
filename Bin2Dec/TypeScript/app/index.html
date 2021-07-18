@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <title>Bin2Dec</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Binary to Decimal</h1>
+        <p>Please, insert a binary number bellow to convert in decimal number.</p>
+        <hr>
+    </header>
+    <div class="cardContainer">
+        <div class="card">
+            <div class="cardBody">
+                <form id="formBinary">
+                    <div class="formGroup">
+                        <label>Binary number</label>
+                        <input type="text" id="inputBinary" />
+                        <button type="submit">Convert</button>
+                    </div>
+                    <div class="formGroup">
+                        <label>Decimal number</label>
+                        <input type="text" id="inputResult" readonly />
+                    </div>
+                    <div class="formGroup">
+                        <div class="divAlert"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="lib/system.js"></script>
+<script>
+    System.defaultJSExtensions = true;
+    System.import('js/app.js').catch(err => console.error(err));
+</script>
+
+</html>

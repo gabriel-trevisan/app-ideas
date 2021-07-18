@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <header>
+        <h1>Border Radius Previewer</h1>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="cardBody">
+                <div class="cardInputs">
+                    <input type="text" id="inputTopLeft" class="input" value="0">
+                    <input type="text" id="inputTopRight" class="input" value="0">
+                </div>
+                <div id="element"></div>
+                <div class="cardInputs">
+                    <input type="text" id="inputBottomLeft" class="input" value="0">
+                    <input type="text" id="inputBottomRight" class="input" value="0">
+                </div>
+            </div>
+            <div class="cardFooter">
+                <div class="cardFooterArea">
+                    <textarea readonly></textarea>
+                </div>
+                <div class="cardFooterButton">
+                    <button>Copy!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <input type="text" id="inputTopRight">
+        <button id="btnUpdate">Update</button> -->
+</body>
+<script src="lib/system.js"></script>
+<script>
+    System.defaultJSExtensions = true;
+    System.import('js/app.js').catch(err => console.error(err));
+</script>
+
+</html>

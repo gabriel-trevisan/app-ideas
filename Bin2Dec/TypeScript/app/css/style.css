@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa;
+    margin: 30px 10px 0px 10px;
+}
+
+@media (max-width: 1024px){
+    header{
+        width: 45% !important;
+    }
+    .card{
+        width: 45% !important;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        width: 100% !important;
+    }
+    .card{
+        width: 100% !important;
+    }
+}
+
+header{
+    margin: auto;
+    width: 33%;
+}
+
+.cardContainer{
+    margin-top: 30px;
+}
+
+.card{
+    margin: auto;
+    background-color: #ffffff;
+    border: 1px solid #b8b8b8;
+    border-radius: 5px;
+    width: 33%;
+}
+
+.cardBody{
+    margin: 30px;
+}
+
+.formGroup button{
+    margin: 5px;
+    background-color: #006fbe;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px none #2d8fd5;
+    padding: 10px;
+}
+
+.formGroup label{
+    margin: 5px;
+}
+
+.formGroup input{
+    display: block;
+    height: 30px;
+    width: 100%;
+    margin: 5px;
+}
+
+.formGroup .divAlert{
+    margin: 5px;
+    width: 100%;
+    color: red;
+}
+
+.formGroup input[readonly]{
+    background-color: #e9ecef;
+    opacity: 1;
+}
+
+label{
+    font-weight: 700;
+}
