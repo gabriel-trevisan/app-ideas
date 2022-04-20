@@ -11,7 +11,15 @@ Screen for the user to enter data
 User Function CONVBINARY()
     Local cText as string
     Local cMessage := "The conversion is: "
+    Local oRegex as object
+
+    oRegex := tRegex():new("[2-9]")
     cText := FWInputBox("Enter up to 8 binary digits", "")
+
+    if oRegex:Search(cText)
+        MsgStop("The program accept only 0 and 1")
+        Return
+    endif
 
     MsgInfo(cMessage + BINTODEC(cText))
 Return
